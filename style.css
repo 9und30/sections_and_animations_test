@@ -1,0 +1,98 @@
+:root {
+    --dark-clr: #1F1D36;
+    --dark-clr-2: #3F3351;
+    --text-clr: #E9A6A6;
+    --text-clr-2: #864879;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit';
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+}
+
+#header-sec {
+    background-color: var(--dark-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-sec .content {
+    animation: fade-in 1s ease-out;
+}
+
+#header-sec .content .item {
+    display: block;
+    margin: 0 auto;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        padding-top: 15%;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#header-sec .content h1 {
+    color: var(--text-clr);
+    text-align: center;
+    font-weight: 500;
+    font-size: 6rem;
+    padding: 3rem;
+}
+
+#header-sec .content button {
+    background: none;
+    border-color: var(--text-clr-2);
+    border-style: solid;
+    color: var(--text-clr-2);
+    font-size: 1.25rem;
+    padding: 0.33rem;
+}
+
+#header-sec .content button:hover {
+    background: var(--text-clr-2);
+    color: var(--dark-clr);
+    cursor: pointer;
+}
+
+#second-sec {
+    background-color: var(--dark-clr-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-sec .content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-sec .content .item {
+    text-align: center;
+    max-height: 100%;
+}
+
+#second-sec .content h2 {
+    color: var(--text-clr-2);
+    font-size: 5rem;
+    width: 30%;
+}
+
+#second-sec .content p {
+    font-size: 1.75rem;
+    width: 40%;
+    color: var(--text-clr);
+}
