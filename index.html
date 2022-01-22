@@ -9,20 +9,80 @@
 </head>
 <body>
 
+    <div class="navbar">
+
+        <a href="javascript:scrollToHeader()" class="nav-element home-btn">Home</a>
+
+        <nav>
+            <ul>
+                <li><a href="javascript:scrollToAbout()" id="nav-about" class="nav-element">About</a></li>
+                <li><a href="javascript:scrollToProjects()" id="nav-projects" class="nav-element">Projects</a></li>
+                <li><a href="javascript:scrollToContact()" id="nav-contact" class="nav-element">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
     <section id="header-sec">
 
         <div class="content">
             <h1 class="item">Hello</h1>
-            <button id="lm-btn" class="item">Learn more</button>
+            <button id="lm-btn" class="item" onclick="scrollToAbout()">Learn more</button>
         </div>
 
     </section>
 
-    <section id="second-sec">
+    <section id="about-sec">
 
         <div class="content">
             <h2 class="item">About us</h2>
             <p class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut aliquid ducimus molestiae modi excepturi magni, praesentium harum odio, sed repellendus ea, ratione necessitatibus fuga mollitia. Voluptate provident reiciendis consectetur? Nobis!</p>
+        </div>
+        <button id="p-btn" onclick="scrollToProjects()">Check our Projects</button>
+
+    </section>
+
+    <section id="projects-sec">
+
+        <div class="content">
+            <div class="projects-list">
+                <div class="row">
+                    <div class="project">Project1</div>
+                    <div class="project">Project2</div>
+                </div>
+                <div class="row">
+                    <div class="project">Project3</div>
+                    <div class="project">Project4</div>
+                </div>
+                <div class="row">
+                    <div class="project">Project5</div>
+                    <div class="project">Project6</div>
+                </div>
+            </div>
+            <h2>Our Projects</h2>
+        </div>
+        <button id="c-btn" onclick="scrollToContact()">Contact us</button>
+
+    </section>
+
+    <section id="contact-sec">
+
+        <div class="content">
+            <form id="contact-form">
+                <div class="form">
+                    <input type="text" name="name" id="name" placeholder="Bob">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form">
+                    <input type="email" name="email" id="email" placeholder="Bob@email.com">
+                    <label for="email">E-Mail</label>
+                </div>
+                <div class="form">
+                    <input type="text" name="message" id="message" placeholder="Hello!">
+                    <label for="messafe">Message</label>
+                </div>
+                <input type="submit" value="Send Message" form="contact-form">
+            </form>
         </div>
 
     </section>
